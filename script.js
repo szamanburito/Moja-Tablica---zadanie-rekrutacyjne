@@ -12,33 +12,47 @@ AddBtn.addEventListener("click", counter);
 
 function AddNew() {
   const Card = document.createElement("div");
-  Card.classList.add("Card", "del--" + card_number);
+  Card.classList.add("Card", "num--" + card_number);
 
-  Card.style.display = 'inline-block';
+  Card.style.display = "inline-block";
 
   Card.innerHTML =
     `
-    <input type="button" value="Usuń" class="Delete--card--button" onClick="Deletediv(` +
+    <input type="button" value="Usuń" class="Delete--card--button" onClick="removeDiv(` +
     card_number +
     `)" />
-    <input type="button" value="Pokaż/Ukryj" class="Show--card--button" onClick="Hide(` +
+    <input type="button" value="Pokaż/Ukryj" class="Show--card--button" onClick="HideDiv(` +
     card_number +
-    `)"/>
-    <div class="ticket">
+    `)" />
+    <div style="display: block" class="ticket hide--` +
+    card_number +
+    `">
     <p>Karta ` +
     card_number +
     `</p>
     </div>`;
 
   main_container.appendChild(Card);
-  console.log();
 }
-// Delete card //
 
-function Deletediv(card_number) {
-  const delete_div = document.querySelector(".del--" + card_number);
-  console.log(card_number);
-  delete_div.removeChild(delete_div);
 
-  //card_number--;
+
+// remove cards //
+function removeDiv(card_number) {
+  const removeCard = document.querySelector(".num--" + card_number);
+  removeCard.outerHTML = "";
+}
+
+
+
+// hide cards //
+
+function HideDiv(card_number) {
+  const HideCard = document.querySelector(".hide--" + card_number);
+
+  if(HideCard.style.display == 'block') {
+    HideCard.style.display = 'none';
+  } else {
+    HideCard.style.display = 'block';
+  }
 }

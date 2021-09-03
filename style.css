@@ -59,12 +59,15 @@ input[type="button"] {
 
 /* Card */
 .Card {
+
     display: inline-block;
 
     margin-left: 30px;
     margin-bottom: 30px;
 }
 .ticket {
+    display: block;
+
     background: #28385E;
     margin-top: 8px;
     height: 250px;
