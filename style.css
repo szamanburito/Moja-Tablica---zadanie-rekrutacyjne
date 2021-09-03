@@ -5,13 +5,7 @@
 }
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-/*
-Montserrat Bold 32px
-Montserrat Regular 16px
-Montserrat Regular 12px
 
-    #132039
-*/
 
 body {
     background: #f3f3f3;
@@ -28,7 +22,6 @@ header h1 {
     margin-bottom: 10px;
 }
 main {
-    padding-top: 30px;
 }
 
 /* buttons */
@@ -60,7 +53,6 @@ input[type="button"] {
 /* Card */
 .Card {
 
-    display: inline-block;
 
     margin-left: 30px;
     margin-bottom: 30px;
