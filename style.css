@@ -1,76 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 body {
-    background: #f3f3f3;
+  background: #f3f3f3;
 }
 header {
-    background: #ffffff;
-    padding: 30px;
+  background: #ffffff;
+  padding: 30px;
 }
 header h1 {
-    color: #28385E;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  color: #28385e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 main {
+  padding-top: 30px;
 }
 
 /* buttons */
 input[type="button"] {
-    
-    font-family:  'Montserrat', sans-serif;
-    font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 
-    border: none;
-    border-radius: 3px;
-    padding: 4px;
+  border: none;
+  border-radius: 3px;
+  padding: 4px;
 
+  color: #f3f3f3;
+  background: #132039;
+  cursor: pointer;
 
-    color: #f3f3f3;
-    background: #132039;
-    cursor: pointer;
-  }
+  transition: 0.2s ease-out;
+}
+input[type="button"]:hover {
+    background: #040f24;
+}
 .Add--card--button {
-    width: 120px;
+  width: 120px;
 }
 .Delete--card--button {
-    margin-right: 5px;
-    width: 100px;
+  margin-right: 5px;
+  width: 100px;
 }
 .Show--card--button {
-    width: 100px;
+  width: 100px;
 }
 
 /* Card */
 .Card {
+  margin-left: 30px;
+  margin-bottom: 30px;
 
-
-    margin-left: 30px;
-    margin-bottom: 30px;
+  display: flex;
 }
 .ticket {
-    display: block;
+  display: block;
 
-    background: #28385E;
-    margin-top: 8px;
-    height: 250px;
-    border-radius: 3px;
+  background: #28385e;
+  margin-top: 8px;
+  height: 250px;
+  border-radius: 3px;
 
-    text-align: center;
+  text-align: center;
 }
 .ticket p {
-    padding-top: 15px;
-    color: white;
+  padding-top: 15px;
+  color: white;
 
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }

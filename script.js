@@ -34,8 +34,6 @@ function AddNew() {
   console.log(card_number);
 }
 
-
-
 // remove cards //
 function removeDiv(card_number) {
   const removeCard = document.querySelector(".num--" + card_number);
@@ -43,16 +41,14 @@ function removeDiv(card_number) {
   console.log(card_number);
 }
 
-
-
 // hide cards //
 
 function HideDiv(card_number) {
   const HideCard = document.querySelector(".hide--" + card_number);
 
-  if(HideCard.style.display == 'block') {
-    HideCard.style.display = 'none';
+  if (HideCard.style.display == "block") {
+    HideCard.style.display = "none";
   } else {
-    HideCard.style.display = 'block';
+    HideCard.style.display = "block";
   }
 }
