@@ -58,7 +58,8 @@ input[type="button"]:hover {
   margin-left: 30px;
   margin-bottom: 30px;
 
-  display: flex;
+  vertical-align: top;
+
 }
 .ticket {
   display: block;

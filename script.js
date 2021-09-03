@@ -31,14 +31,12 @@ function AddNew() {
     </div>`;
 
   main_container.appendChild(Card);
-  console.log(card_number);
 }
 
 // remove cards //
-function removeDiv(card_number) {
-  const removeCard = document.querySelector(".num--" + card_number);
+function removeDiv(cardNum) {
+  const removeCard = document.querySelector(".num--" + cardNum);
   removeCard.outerHTML = "";
-  console.log(card_number);
 }
 
 // hide cards //
