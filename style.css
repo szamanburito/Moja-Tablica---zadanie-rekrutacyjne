@@ -27,7 +27,7 @@ header h1 {
 
     margin-bottom: 10px;
 }
-.maincontainer {
+main {
     padding-top: 30px;
 }
 
@@ -59,7 +59,6 @@ input[type="button"] {
 
 /* Card */
 .Card {
-
     display: inline-block;
 
     margin-left: 30px;
